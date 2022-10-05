@@ -11,6 +11,8 @@
 		AAB1B23F28ED65BB007867EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1B23E28ED65BB007867EB /* ContentView.swift */; };
 		AAB1B24128ED65C0007867EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB1B24028ED65C0007867EB /* Assets.xcassets */; };
 		AAB1B24428ED65C0007867EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB1B24328ED65C0007867EB /* Preview Assets.xcassets */; };
+		AAB1B24C28ED66C6007867EB /* Shogi686MicroSPM in Frameworks */ = {isa = PBXBuildFile; productRef = AAB1B24B28ED66C6007867EB /* Shogi686MicroSPM */; };
+		AAB1B24F28ED6C5E007867EB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB1B24E28ED6C5E007867EB /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		AAB1B23E28ED65BB007867EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAB1B24028ED65C0007867EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAB1B24328ED65C0007867EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAB1B24E28ED6C5E007867EB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB1B24F28ED6C5E007867EB /* libc++.tbd in Frameworks */,
+				AAB1B24C28ED66C6007867EB /* Shogi686MicroSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,7 @@
 			children = (
 				AAB1B23B28ED65BB007867EB /* Shogi686MicroiOSSPM */,
 				AAB1B23A28ED65BB007867EB /* Products */,
+				AAB1B24D28ED6C5E007867EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +73,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AAB1B24D28ED6C5E007867EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1B24E28ED6C5E007867EB /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = Shogi686MicroiOSSPM;
+			packageProductDependencies = (
+				AAB1B24B28ED66C6007867EB /* Shogi686MicroSPM */,
+			);
 			productName = Shogi686MicroiOSSPM;
 			productReference = AAB1B23928ED65BB007867EB /* Shogi686MicroiOSSPM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = AAB1B23028ED65BB007867EB;
+			packageReferences = (
+				AAB1B24A28ED66C6007867EB /* XCRemoteSwiftPackageReference "Shogi686MicroSPM" */,
+			);
 			productRefGroup = AAB1B23A28ED65BB007867EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAB1B24A28ED66C6007867EB /* XCRemoteSwiftPackageReference "Shogi686MicroSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/hidaka/yama/Shogi686MicroSPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAB1B24B28ED66C6007867EB /* Shogi686MicroSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAB1B24A28ED66C6007867EB /* XCRemoteSwiftPackageReference "Shogi686MicroSPM" */;
+			productName = Shogi686MicroSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAB1B23128ED65BB007867EB /* Project object */;
 }

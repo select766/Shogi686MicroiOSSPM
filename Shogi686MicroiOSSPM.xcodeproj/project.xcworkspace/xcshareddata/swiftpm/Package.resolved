@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "shogi686microspm",
+      "kind" : "localSourceControl",
+      "location" : "/Users/hidaka/yama/Shogi686MicroSPM",
+      "state" : {
+        "revision" : "3ec438a6c57959fc4c14d74c75ec2d22959aa8ab",
+        "version" : "0.0.4"
+      }
+    }
+  ],
+  "version" : 2
+}
