@@ -22,6 +22,7 @@
 		AAB1B24028ED65C0007867EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAB1B24328ED65C0007867EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AAB1B24E28ED6C5E007867EB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AAB1B25028ED7D02007867EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		AAB1B23028ED65BB007867EB = {
 			isa = PBXGroup;
 			children = (
+				AAB1B25028ED7D02007867EB /* README.md */,
 				AAB1B23B28ED65BB007867EB /* Shogi686MicroiOSSPM */,
 				AAB1B23A28ED65BB007867EB /* Products */,
 				AAB1B24D28ED6C5E007867EB /* Frameworks */,
